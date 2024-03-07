@@ -57,7 +57,7 @@ bool wavegenOpen()
     return bOK;
 }
 
-//run stop?
+//run stop
 void run_stop(char *out, bool play) //this
 {
     if((strcmp(out, "a") == 0) || (strcmp(out, "A") == 0))
