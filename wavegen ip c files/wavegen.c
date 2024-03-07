@@ -81,7 +81,7 @@ int main(int argc, char* argv[])
         if (strcmp(argv[1], "dc") == 0)
         {
             offset = atoi(argv[3]);
-            wave_type(out, 0, 0, 0, offset, 0); // ???
+            wave_type(out, 0, 0, 0, offset, 0);
         }
         else if (strcmp(argv[1], "cycles") == 0)
         {
@@ -92,7 +92,7 @@ int main(int argc, char* argv[])
         val2 = getcycles();
         val3 = getofs();
         val4 = getrun();
-        printf("out: %s, %d, %d, %d, %d; freqA: %d, cycles: %d, offset: %d, run: %d  \n",out, frequency, amplitude, offset, dc, val1, val2, val3, val4);
+        //printf("out: %s, %d, %d, %d, %d; freqA: %d, cycles: %d, offset: %d, run: %d  \n",out, frequency, amplitude, offset, dc, val1, val2, val3, val4);
     }
     else if (argc == 5 || argc == 6 || argc == 7)
     {
@@ -145,8 +145,7 @@ int main(int argc, char* argv[])
         val3 = getmode();
         val4 = phaseoffa();
         val5 = phaseoffb();
-        printf("out: %s, %d, %d, %d, %d; freqA: %d; cycles: %d; mode: %d; phase offset a: %d; phase offset b: %d\n",out,
-                                                        frequency, amplitude, offset, dc, val1, val2, val3, val4, val5);
+        //printf("out: %s, %d, %d, %d, %d; freqA: %d; cycles: %d; mode: %d; phase offset a: %d; phase offset b: %d\n",out, frequency, amplitude, offset, dc, val1, val2, val3, val4, val5);
     }
     else
         printf("  command not understood\n");
